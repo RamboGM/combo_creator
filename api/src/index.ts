@@ -1,3 +1,4 @@
+
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
@@ -5,12 +6,14 @@ import passport from "passport";
 // @ts-ignore
 import dotenv from "dotenv";
 import path from "path";
+export { default as AppRoutes } from './config/routes';
+
 
 dotenv.config({
   path: path.resolve(".env"),
 });
 
-import { AppRoutes } from "@config";
+import { AppRoutes } from "./config";
 import {
   beforeCheckClientMiddleware,
   errorHandlingMiddleware,

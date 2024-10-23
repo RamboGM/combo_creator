@@ -20,5 +20,8 @@
   "engines": {
     "node": ">=16.14"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.2",
+  "dependencies": {
+    "eslint-config-react-app": "^7.0.1"
+  }
 }
